@@ -18,7 +18,7 @@ public partial class SignUp : System.Web.UI.Page
     {
         SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString1"].ConnectionString);
         con.Open();
-        SqlCommand command = new SqlCommand("INSERT INTO Users(Username,Password,Email) Values('" + user.Text + "','" + pass.Text +"','"+email.Text+"')", con);
+        SqlCommand command = new SqlCommand("INSERT INTO Users(Username,Password,Email,UserType) Values('" + user.Text + "','" + pass.Text +"','"+email.Text+"','U')", con);
         command.ExecuteNonQuery();
     }
 
