@@ -46,7 +46,7 @@
         <ul class="dropdown-menu" style="background-color:whitesmoke">
           <li class="dropdown-header" style="color:blue">Men</li>
             <li role="separator" class="divider" style="text-align:center"></li>
-            <li style="text-align:center;color:gold"><a href="#">Shirts</a></li>
+            <li style="text-align:center;><a href="#">Shirts</a></li>
             <li style="text-align:center"><a href="#">Pants</a></li>
             <li class="dropdown-header" style="color:blue">Women</li>
             <li style="text-align:center"><a href="#">Tops</a></li>

@@ -36,13 +36,7 @@
           Products
         </a>
         <ul class="dropdown-menu" style="background-color:whitesmoke">
-          <li class="dropdown-header" style="color:blue">Men</li>
-            <li role="separator" class="divider" style="text-align:center"></li>
-            <li style="text-align:center;color:gold"><a href="#">Shirts</a></li>
-            <li style="text-align:center"><a href="#">Pants</a></li>
-            <li class="dropdown-header" style="color:blue">Women</li>
-            <li style="text-align:center"><a href="#">Tops</a></li>
-            <li style="text-align:center"><a href="#">Leggings</a></li>
+         <li><a href="Addproduct.aspx">Add Product</a></li>
         </ul>
       </li>
       <li class="nav-item">
@@ -63,7 +57,8 @@
     </div>
         </div>
         <br /><br /><br /><br /><br /><br />
-        <footer class="w3-padding-32 w3-black w3-center footer-pos">
+    </form>
+    <footer class="w3-padding-32 w3-black w3-center footer-pos">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-16">
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -73,6 +68,5 @@
   </div>
   <p>Developed by <a href="#" target="_blank" class="w3-hover-text-green">Tejoy Vachhrajani</a></p>
 </footer>
-    </form>
 </body>
 </html>
