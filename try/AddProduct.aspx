@@ -36,28 +36,35 @@
              <div class="form-group">
             <asp:Label ID="Label5" runat="server" Text="Category" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-3">
-                        <asp:DropDownList ID="ddlCategory" CssClass="form-control" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="ddlCategory" OnSelectedIndexChanged="ddlCategory_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control" runat="server"></asp:DropDownList>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="This field is required !" cssClass="text-danger" ControlToValidate="ddlCategory" InitialValue="0"></asp:RequiredFieldValidator>
                     </div>
                 </div>
              <div class="form-group">
             <asp:Label ID="Label6" runat="server" Text="Sub Category" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-3">
-                        <asp:DropDownList ID="ddlSubCategory" CssClass="form-control" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="ddlSubCategory" onSelectedIndexChanged="ddlSubCategory_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control" runat="server"></asp:DropDownList>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="This field is required !" cssClass="text-danger" ControlToValidate="ddlSubCategory" InitialValue="0"></asp:RequiredFieldValidator>
                     </div>
                 </div>
              <div class="form-group">
             <asp:Label ID="Label15" runat="server" Text="Gender" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-3">
-                        <asp:DropDownList ID="ddlGender" CssClass="form-control" runat="server"></asp:DropDownList>
+                        <asp:DropDownList ID="ddlGender" OnSelectedIndexChanged="ddlGender_SelectedIndexChanged" AutoPostBack="true" CssClass="form-control" runat="server"></asp:DropDownList>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ErrorMessage="This field is required !" cssClass="text-danger" ControlToValidate="ddlGender" InitialValue="0"></asp:RequiredFieldValidator>
                     </div>
                 </div>
             <div class="form-group">
             <asp:Label ID="Label7" runat="server" Text="Size" CssClass="col-md-2 control-label"></asp:Label>
                     <div class="col-md-3">
-                        <asp:TextBox ID="txtSize" CssClass="form-control" runat="server"></asp:TextBox>                        
+                       <asp:CheckBoxList ID="cblSize" CssClass="form-control" runat="server" RepeatDirection="Horizontal"></asp:CheckBoxList>                   
+                    </div>
+                </div>
+             <div class="form-group">
+            <asp:Label ID="Label16" runat="server" Text="Quantity" CssClass="col-md-2 control-label"></asp:Label>
+                    <div class="col-md-3">
+                        <asp:TextBox ID="txtQuantity" CssClass="form-control" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ErrorMessage="This field is required !" cssClass="text-danger" ControlToValidate="txtPName"></asp:RequiredFieldValidator>
                     </div>
                 </div>
             <div class="form-group">
