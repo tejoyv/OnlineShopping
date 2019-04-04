@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Sign In</title>
+    <title>Welcome</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
-<body>
+<body style="background-color:palegoldenrod">
     <form id="form1" runat="server">
     <div>
         <nav class="navbar navbar-expand-lg navbar fixed-top navbar navbar-light" style="background-color: #e3f2fd;>
@@ -44,7 +44,17 @@
       </li>
     </ul>
      <span class="navbar-text">
-      <a class="nav-link active" href="AdminHome.aspx">Manage</a>
+      <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Manage</a>
+          <ul class="dropdown-menu">
+              <li><a href="AddBrand.aspx">Add Brand</a></li>
+               <li><a href="AddCategory.aspx">Add Category</a></li>
+               <li><a href="AddSubCategory.aspx">Add SubCategory</a></li>
+               <li><a href="AddGender.aspx">Add Gender</a></li>
+               <li><a href="AddSize.aspx">Add Size</a></li>
+          </ul>
+      </li>
+
     </span>
        <span class="navbar-text">
       <a class="nav-link active" href="Default.aspx">Logout</a>
@@ -58,6 +68,7 @@
         </div>
         <br /><br /><br /><br /><br /><br />
     </form>
+    <!--
     <footer class="w3-padding-32 w3-black w3-center footer-pos">
   <h5>Find Us On</h5>
   <div class="w3-xlarge w3-padding-16">
@@ -68,5 +79,6 @@
   </div>
   <p>Developed by <a href="#" target="_blank" class="w3-hover-text-green">Tejoy Vachhrajani</a></p>
 </footer>
+    -->
 </body>
 </html>
