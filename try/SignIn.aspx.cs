@@ -54,7 +54,7 @@ public partial class SignIn : System.Web.UI.Page
             if (Utype == "U")
             {
                 Session["Username"] = UserName.Text;
-                Response.Redirect("~/UserHome.aspx");
+                Response.Redirect("~/Products.aspx");
             }
             if (Utype == "A")
             {
